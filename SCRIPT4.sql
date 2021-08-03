@@ -1,3 +1,4 @@
+-teste
 DECLARE
   vNome TALUNO.nome%TYPE := 'Marcinho';
   vCidade TALUNO.CIDADE%TYPE;
