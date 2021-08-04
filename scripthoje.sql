@@ -33,3 +33,12 @@ BEGIN
   --SELECT nome INTO vTable.nome FROM TALUNO WHERE cod_aluno = 44;
    --Dbms_Output.PUT_LINE('TESTE');
 END;
+
+DECLARE
+  TYPE TV1 IS VARRAY(9) OF number;
+  v1 TV1 := TV1();
+BEGIN
+  v1.extend;
+  v1(1) := 9;
+  Dbms_Output.put_line(v1(1));
+END;
